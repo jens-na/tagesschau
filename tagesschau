@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# A shell script which outputs the link of the latest broadcast from
+# A shell script which outputs the link of the latest broadcast of
 # http://tagesschau.de/ which may be the 'Tagesschau' or 'Tagesthemen'
 #
 # cgb
