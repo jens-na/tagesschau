@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# A shell script which outputs the link of the latest broadcast from
+# http://tagesschau.de/ which may be the 'Tagesschau' or 'Tagesthemen'
+#
+# cgb
+
+LAST_VIDEO=$(curl -s http://tagesschau.de/ | egrep ".*letzte Sendung.*" | sed 's/<a href=\"//g;s/\".*//g')
+curl -s $LAST_VIDEO | egrep "webl\.h264\.mp4" | sed 's/<a href=\"//g;s/\".*//g'

@@ -1,0 +1,18 @@
+tagesschau
+a little shell script which outputs the link of the latest broadcast of
+http://tagesschau.de/.
+
+Depending on the time you start the script you will get the link of
+  - Tagesschau
+  - Tagesthemen
+
+Dependencies:
+  - curl
+
+Insallation:
+  - put tagesschau to /usr/local/bin/
+  - chmod +x /usr/local/bin/tagesschau
+
+Usage:
+  - wget `tagesschau` (Download the latest broadcast)
+  - mplayer `tagesschau` (Watch the latest broadcast)
