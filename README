@@ -6,6 +6,8 @@ Depending on the time you start the script you will get the link of
   - Tagesschau
   - Tagesthemen
 
+(we ouput the link of the following video format: h264 - large version)
+
 Dependencies:
   - curl
 
