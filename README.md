@@ -17,8 +17,8 @@ Dependencies
 
 Installation
 -------------
-  - put tagesschau to /usr/local/bin/
-  - chmod +x /usr/local/bin/tagesschau
+  - put tagesschau to <tt>/usr/local/bin/</tt>
+  - <tt>chmod +x /usr/local/bin/tagesschau</tt>
 
 Usage
 -----
