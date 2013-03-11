@@ -22,5 +22,5 @@ Installation
 
 Usage
 -----
-  - wget $(tagesschau) # (Download the latest broadcast)
-  - mplayer $(tagesschau) # (Watch the latest broadcast)
+  - <tt>wget $(tagesschau)</tt> # (Download the latest broadcast)
+  - <tt>mplayer $(tagesschau)</tt> # (Watch the latest broadcast)
