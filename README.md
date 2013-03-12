@@ -9,7 +9,7 @@ Depending on the time you start the script you will get the link of
   - Wochenspiegel
   - etc.
 
-(we ouput the link of the following video format: h264 - large version)
+video format: h264 - large version
 
 Dependencies
 ------------
