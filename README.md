@@ -1,13 +1,6 @@
 tagesschau
 ==========
-a small shell script which outputs the link of the latest broadcast of
-http://tagesschau.de/.
-
-Depending on the time you start the script you will get the link of
-  - Tagesschau
-  - Tagesthemen
-  - Wochenspiegel
-  - etc.
+a small shell script which outputs the link of the latest broadcast of Tagesschau.
 
 video format: h264 - large version
 
