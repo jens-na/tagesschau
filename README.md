@@ -19,3 +19,9 @@ Usage
 -----
   - <tt>wget $(tagesschau)</tt> # (Download the latest broadcast)
   - <tt>mplayer $(tagesschau)</tt> # (Watch the latest broadcast)
+
+License and Copyright
+=======
+Licensed under the GNU General Public License 3.
+
+(C) Jens Nazarenus, 2012-2013
