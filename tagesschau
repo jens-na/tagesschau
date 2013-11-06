@@ -5,5 +5,10 @@
 # or other broadcasts
 #
 # jens-na
-LAST_VIDEO=$(curl -s http://www.tagesschau.de | egrep ".*sendung/ts.*" | head -n 1 | sed 's/.*href=\"/http:\/\/www.tagesschau.de/g;s/\">//g')
+
+# Last episode. Whatever it might be:
+#LAST_VIDEO=$(curl -s http://www.tagesschau.de | egrep ".*sendung/ts.*" | head -n 1 | sed 's/.*href=\"/http:\/\/www.tagesschau.de/g;s/\">//g')
+# Last Tagesschau at 20:00:
+LAST_VIDEO=http://www.tagesschau.de/sendung/tagesschau/index.html
 curl -s "$LAST_VIDEO" | egrep "webl\.h264" | sed 's/.*href=\"//g;s/\">.*//g'
+
