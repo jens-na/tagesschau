@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#LAST_VIDEO=$(curl -s http://www.tagesschau.de | egrep ".*sendung/ts.*" | head -n 1 | sed 's/.*href=\"/http:\/\/www.tagesschau.de/g;s/\">//g')
-
 # TagesSchau 20:00
 TS20=http://www.tagesschau.de/sendung/tagesschau/index.html
 vidurl=$(curl -s "$TS20" | egrep "webl\.h264" | sed 's/.*href=\"//g;s/\">.*//g')
