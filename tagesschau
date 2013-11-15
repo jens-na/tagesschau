@@ -1,9 +1,24 @@
 #!/bin/sh
 #
-# A shell script which outputs the link of the latest broadcast of
-# http://tagesschau.de/ which may be the 'Tagesschau', 'Tagesthemen' 
-# or other broadcasts
+# Outputs links of the television news service Tagesschau 
+# Copyright (C) 2012-2013 , Jens Nazarenus
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# jens-na
-LAST_VIDEO=$(curl -s http://www.tagesschau.de | egrep ".*sendung/ts.*" | head -n 1 | sed 's/.*href=\"/http:\/\/www.tagesschau.de/g;s/\">//g')
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+if [ "$1" = "-8" ]
+  then LAST_VIDEO=http://www.tagesschau.de/sendung/tagesschau/index.html
+  else LAST_VIDEO=$(curl -s http://www.tagesschau.de | egrep ".*sendung/ts.*" | head -n 1 | sed 's/.*href=\"/http:\/\/www.tagesschau.de/g;s/\">//g')
+fi
+
 curl -s "$LAST_VIDEO" | egrep "webl\.h264" | sed 's/.*href=\"//g;s/\">.*//g'
