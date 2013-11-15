@@ -19,6 +19,7 @@ Usage
 -----
   - <tt>wget $(tagesschau)</tt> # (Download the latest broadcast)
   - <tt>mplayer $(tagesschau)</tt> # (Watch the latest broadcast)
+  - <tt>mplayer $(tagesschau -8)</tt> # (Watch the latest 8 p.m. broadcast)
 
 License and Copyright
 =======
